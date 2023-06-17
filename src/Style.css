@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+button{
+    width: 100%;
+    height: 100%;
+    padding:30px 30px;
+    font-size: 1.3rem;
+    color: #d6d8dc;
+    border: 0;
+    cursor: pointer;
+    /* border-radius: 3px; */
+}
+.normal{
+    background-color: #232a32;
+}
+.normal:hover{
+    background-color: #181e24;
+}
+.pinkB{
+    background-color: #fa3857;
+}
+.pinkB:hover{
+    background-color: #d82c49;
+}
+.darker{
+    background-color: #181e24;
+}
+.darker:hover{
+    background-color: #232a32;
+}
+.lighter{
+    background-color: #2d373e;
+}
+.lighter:hover{
+    background-color: #232a32;
+}
+body{
+    background-color: #1b2026;
+}
+.myTable{
+    border-collapse: collapse;
+    /* border-radius: 50px; */
+    box-shadow: 10px 70px 70px 50px #232a32;
+}
+.calculator-grid{
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(4,6rem);
+    grid-template-rows: minmax(7rem,auto) repeat(5,6rem);
+    align-items: center;
+    justify-content: center;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1 / -1;
+    background-color: #444d57;
+    display: flex;
+    padding:  10px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 80px;
+}
+.output .previousOperand{
+    color: #d6d8dc;
+    font-size: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .currentOperand{
+    color: #d6d8dc;
+    font-size: 2.5rem;
+}
